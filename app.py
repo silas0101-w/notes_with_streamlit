@@ -11,7 +11,7 @@ if not os.path.exists(NOTES_FILE):
     with open(NOTES_FILE, "w") as f:
         json.dump({}, f)
 
-st.title("Note Taking App")
+st.title("Notes board")
 note_text = st.text_area("Enter your note:")
 
 def delete_json_item(filepath, key_to_delete):
